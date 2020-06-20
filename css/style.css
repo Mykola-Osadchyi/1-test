@@ -191,7 +191,7 @@ padding-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center; 
   position: absolute;
-  transform: translate(-36px, -3px);
+  transform: translate(-37px, 0px);
 }
 
 /* полоска */
@@ -211,11 +211,32 @@ padding-bottom: 30px;
 .registration {
   padding-top: 54px;
   padding-bottom: 58px;
-  background-color: rgb(17, 21, 23);
-  background-image: url(../img/registration/t2.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-color: rgb(17, 21, 23);
+  background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-mobile.JPG);
 }
+
+@media (min-resolution: 192dpi) {
+  .registration {
+    background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-mobile@2x.JPG);
+  }
+}
+
 
 .registration__title {
   font-size: 14px;
@@ -344,7 +365,28 @@ padding-bottom: 30px;
 .registration {
   padding-top: 46px;
   padding-bottom: 64px;
-  background-image: url(../img/registration/t2-tablet.jpg);
+
+  background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-tablet.JPG);
+}
+
+@media (min-resolution: 192dpi) {
+  .registration {
+    background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-tablet@2x.JPG);
+  }
 }
 
 .registration__title {
@@ -407,7 +449,27 @@ padding-bottom: 30px;
 .registration {
   padding-top: 86px;
   padding-bottom: 88px;
-  background-image: url(../img/registration/t2-1280.jpg);
+  background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-1280px.JPG);
+}
+
+@media (min-resolution: 192dpi) {
+  .registration {
+    background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-1280px@2x.JPG);
+  }
 }
 
 .registration__title {
@@ -474,11 +536,32 @@ padding-bottom: 30px;
 .registration {
   padding-top: 128px;
   padding-bottom: 100px;
-  background-image: url(../img/registration/t2-1680.jpg);
+  background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-1680px.JPG);
+}
+
+@media (min-resolution: 192dpi) {
+  .registration {
+    background-image: linear-gradient( rgba(17, 21, 23, 0.7), rgba(17, 21, 23, 0.7) ),
+    repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 2px,
+    rgba(0, 0, 0, 0.3) 6px,
+    rgba(0, 0, 0, 0.3) 6px
+  ),
+  url(../img/registration/lesson-1680px@2x.JPG);
+  }
 }
 
 .registration__title {
   margin-bottom: 70px;
+  padding: 0px 28px;
 }
 
 .registration__description {
