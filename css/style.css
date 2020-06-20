@@ -171,6 +171,7 @@ padding-bottom: 30px;
   line-height: 1.818;
   font-weight: 500;
   letter-spacing: 0.55px;
+  position: relative;
 }
 
 .guarantees__item:not(:last-child) {
@@ -181,7 +182,6 @@ padding-bottom: 30px;
   color: var(--primary-color);
  }
 
-/* агонь */
 .guarantees__item::before {
   content: "";
   display: block;
@@ -192,20 +192,21 @@ padding-bottom: 30px;
   background-position: center; 
   position: absolute;
   transform: translate(-37px, 0px);
+  z-index: 1;
 }
 
-/* полоска */
-.guarantees__list::before {
-  content: "";
+.guarantees__item:not(:last-child)::after {
+  content: '';
   display: block;
   width: 2px;
-  height: 284px;
+  height: 120%;
   border-width: 1px;
   border-color: rgb(186, 186, 186);
   border-style: dotted;
   position: absolute;
-  transform: translate(-26px, 16px);
-}
+  top: 15px;
+  left: -26px;
+} 
 
 /* ! registration */
 .registration {
@@ -236,7 +237,6 @@ padding-bottom: 30px;
   url(../img/registration/lesson-mobile@2x.JPG);
   }
 }
-
 
 .registration__title {
   font-size: 14px;
@@ -331,13 +331,11 @@ padding-bottom: 30px;
   }
 }
 
-
 /* ! Tablet */
 @media (min-width: 768px) {
   .container {
     width: 688px;
   }
-
 
   /* ! quarantees-tablet */
   .guarantees {
@@ -355,10 +353,6 @@ padding-bottom: 30px;
   .guarantees__list {
     background-color: var(--bg-quarantees-color);
     padding: 36px 50px 30px 98px;
-  }
-
-  .guarantees__list::before {
-    height: 174px;
   }
 
 /* ! registration-tablet */
@@ -440,10 +434,6 @@ padding-bottom: 30px;
     letter-spacing: 0.9px;
   }
 
-  .guarantees__list::before {
-    height: 224px;
-}
-
 /* ! registration-1280px */
 
 .registration {
@@ -503,8 +493,6 @@ padding-bottom: 30px;
   .registration__client-name {
     margin-bottom: 28px;
   }
-
-
 }
 
 /* ! 1680px */
