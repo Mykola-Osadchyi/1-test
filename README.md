@@ -1,2 +1,2 @@
-# 1-test
-my first work
+# homework-10
+goit fe course / html-css / homework-10

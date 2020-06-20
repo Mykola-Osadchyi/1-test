@@ -1,0 +1,304 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+       url('../fonts/montserrat-v14-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+       url('../fonts/montserrat-v14-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-800 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+       url('../fonts/montserrat-v14-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+:root {
+--primary-color: rgb(255, 107, 8);
+--dark-color: rgb(0, 0, 0);
+--light-dark-color: rgb(24, 25, 29);
+--light-gray-color: rgb(185, 185, 185);
+--gray-color: rgb(133, 133, 133);
+--white-color: rgb(255, 255, 255);
+--dark-bg-color: rgb(17, 21, 23);
+
+--shadow-first-color: rgba(29, 29, 27, 0.039);
+--shadow-secondary-color: rgba(29, 29, 27, 0.11);
+--shadow-third-color: rgba(29, 29, 27, 0.09);
+
+--bg-quarantees-color: rgb(241, 241, 241);
+--text-footer-color: rgba(253, 254, 254, 0.42);
+  
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: --white-color;
+}
+
+.list {
+  list-style: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  /* @media (min-width: 768px) {
+    width: 688px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 1210px;
+  }
+
+  @media (min-width: 1680px) {
+    width: 1340px;
+  } */
+}
+
+
+
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
+/* ! quarantees */
+.guarantee {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  color: var(--dark-bg-color);
+  font-weight: bold;
+  line-height: 3.127;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.guarantee__list {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 34px;
+  letter-spacing: 0.55px;
+  position: relative;
+}
+
+.guarantee__list-wrapper {
+  background-color: var(--bg-quarantees-color);
+}
+
+
+.guarantee__item {
+  color: var(--light-dark-color);
+  line-height: 1.818;
+  font-weight: 500;
+}
+
+.guarantee__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.guarantee__item--highlight {
+  color: var(--primary-color);
+ }
+
+/* агонь */
+.guarantee__item::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 18px;
+  background-image: url(../img/guarantees/fire.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: absolute;
+  transform: translate(-32px, 0px);
+}
+
+/* полоска */
+.guarantee__list::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 284px;
+  border-width: 1px;
+  border-color: rgb(186, 186, 186);
+  border-style: dotted;
+  position: absolute;
+  transform: translate(-26px, 16px);
+}
+
+/* ! registration */
+.registration {
+  padding-top: 54px;
+  padding-bottom: 58px;
+  background-color: rgb(17, 21, 23);
+  background-image: url(../img/registration/t2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.registration__title {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.7px;
+  margin-bottom: 12px;
+}
+
+.registration__title--highlight,
+.registration__description--highlight {
+  color: rgb(255, 107, 8);
+}
+
+.registration__title--new-line {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .registration__title--new-line-mobile {
+    display: block;
+  }
+}
+
+.registration__description {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 1.818;
+  text-align: center;
+  letter-spacing: 0.55px;
+  margin-bottom: 26px;
+}
+
+.registration__form {
+  margin-bottom: 54px;
+}
+
+.input {
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: transparent;
+  width: 278px;
+  height: 48px;
+}
+
+.registration__client-name {
+  margin-bottom: 20px;
+}
+
+.input::placeholder {
+  padding-left: 22px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 2.885;
+  letter-spacing: 0.65px;
+  text-align: left;
+}
+
+.invite-button {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.43px;
+  width: 246px;
+  height: 44px;
+  border-width: 2px;
+  border-color: rgb(255, 107, 8);
+  border-style: solid;
+  background-color: rgb(255, 107, 8);
+  display: block;
+  margin: auto;
+}
+
+.invite-button:hover {
+  border-color: rgb(211, 85, 38);
+  background-color: rgb(211, 85, 38);
+}
+
