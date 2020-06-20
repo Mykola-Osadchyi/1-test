@@ -46,7 +46,7 @@
 
 
 :root {
---primary-color: rgb(255, 107, 8);
+--primary-color: #ff6b08;
 --dark-color: rgb(0, 0, 0);
 --light-dark-color: rgb(24, 25, 29);
 --light-gray-color: rgb(185, 185, 185);
@@ -185,13 +185,13 @@ padding-bottom: 30px;
 .guarantees__item::before {
   content: "";
   display: block;
-  width: 13px;
-  height: 18px;
-  background-image: url(../img/guarantees/fire.png);
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/guarantees/noun_Campfire_2425646.svg);
   background-repeat: no-repeat;
   background-position: center; 
   position: absolute;
-  transform: translate(-32px, 0px);
+  transform: translate(-36px, -3px);
 }
 
 /* полоска */
