@@ -254,6 +254,13 @@ padding-bottom: 30px;
   height: 48px;
   display: block;
   margin: auto;
+  padding-left: 22px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 2.885;
+  letter-spacing: 0.65px;
+  text-align: left;
 }
 
 .registration__client-name {
@@ -265,7 +272,6 @@ padding-bottom: 30px;
 }
 
 .input::placeholder {
-  padding-left: 22px;
   font-size: 13px;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -420,10 +426,13 @@ padding-bottom: 30px;
   .input {
     width: 618px;
     height: 70px;
+    padding-left: 26px;
+    font-size: 21px;
+    line-height: 1.8;
+    letter-spacing: 1.05px;
   }
 
   .input::placeholder {
-    padding-left: 26px;
     font-size: 21px;
     line-height: 1.8;
     letter-spacing: 1.05px;
@@ -477,8 +486,5 @@ padding-bottom: 30px;
   line-height: 1.5;
   letter-spacing: 1.25px;
   }
-
-
-
 
 }
