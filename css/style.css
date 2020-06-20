@@ -143,7 +143,7 @@ body {
 }
 
 /* ! quarantees */
-.guarantee {
+.guarantees {
 padding-top: 30px;
 padding-bottom: 30px;
 }
@@ -151,13 +151,14 @@ padding-bottom: 30px;
 .section-title {
   font-size: 20px;
   color: var(--dark-bg-color);
-  font-weight: bold;
+  font-weight: 800;
   line-height: 3.127;
   text-align: center;
+  letter-spacing: 1px;
   margin-bottom: 6px;
 }
 
-.guarantee__list {
+.guarantees__list {
   padding-top: 26px;
   padding-bottom: 26px;
   padding-left: 34px;
@@ -165,27 +166,23 @@ padding-bottom: 30px;
   position: relative;
 }
 
-.guarantee__list-wrapper {
-  background-color: var(--bg-quarantees-color);
-}
-
-
-.guarantee__item {
+.guarantees__item {
   color: var(--light-dark-color);
   line-height: 1.818;
   font-weight: 500;
+  letter-spacing: 0.55px;
 }
 
-.guarantee__item:not(:last-child) {
+.guarantees__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.guarantee__item--highlight {
+.guarantees__item--highlight {
   color: var(--primary-color);
  }
 
 /* агонь */
-.guarantee__item::before {
+.guarantees__item::before {
   content: "";
   display: block;
   width: 13px;
@@ -198,7 +195,7 @@ padding-bottom: 30px;
 }
 
 /* полоска */
-.guarantee__list::before {
+.guarantees__list::before {
   content: "";
   display: block;
   width: 2px;
@@ -239,12 +236,6 @@ padding-bottom: 30px;
   display: block;
 }
 
-@media (max-width: 767px) {
-  .registration__title--new-line-mobile {
-    display: block;
-  }
-}
-
 .registration__description {
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -254,10 +245,6 @@ padding-bottom: 30px;
   margin-bottom: 26px;
 }
 
-.registration__form {
-  margin-bottom: 54px;
-}
-
 .input {
   border-width: 1px;
   border-color: rgb(255, 255, 255);
@@ -265,10 +252,16 @@ padding-bottom: 30px;
   background-color: transparent;
   width: 278px;
   height: 48px;
+  display: block;
+  margin: auto;
 }
 
 .registration__client-name {
   margin-bottom: 20px;
+}
+
+.registration__client-phone {
+  margin-bottom: 54px;
 }
 
 .input::placeholder {
@@ -302,3 +295,190 @@ padding-bottom: 30px;
   background-color: rgb(211, 85, 38);
 }
 
+@media (max-width: 767px) {
+  .registration__title--new-line-mobile {
+    display: block;
+  }
+  .guarantees__list-wrapper {
+    background-color: var(--bg-quarantees-color);
+  }
+}
+
+
+/* ! Tablet */
+@media (min-width: 768px) {
+  .container {
+    width: 688px;
+  }
+
+
+  /* ! quarantees-tablet */
+  .guarantees {
+    padding-top: 54px;
+    padding-bottom: 58px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    line-height: 2.405;
+    letter-spacing: 1.3px;
+    margin-bottom: 20px;
+  }
+
+  .guarantees__list {
+    background-color: var(--bg-quarantees-color);
+    padding: 36px 50px 30px 98px;
+  }
+
+  .guarantees__list::before {
+    height: 174px;
+  }
+
+/* ! registration-tablet */
+.registration {
+  padding-top: 46px;
+  padding-bottom: 64px;
+  background-image: url(../img/registration/t2-tablet.jpg);
+}
+
+.registration__title {
+  font-size: 22px;
+  line-height: 1.729;
+  letter-spacing: 1.1px;
+  margin-bottom: 30px;
+}
+
+.registration__description {
+  font-size: 15px;
+  line-height: 1.333;
+  letter-spacing: 0.75px;
+  margin-bottom: 52px;
+}
+
+.input {
+  width: 398px;
+}
+
+.registration__client-phone {
+  margin-bottom: 30px;
+}
+
+.registration__description--new-line {
+  display: block;
+}
+}
+
+/* ! 1280px */
+@media (min-width: 1280px) {
+  .container {
+    width: 1210px;
+  }
+
+/* ! quarantees-1280px */
+  .section-title {
+    font-size: 42px;
+    line-height: 1.489;
+    letter-spacing: 2.1px;
+    margin-bottom: 34px;
+  }
+
+  .guarantees__list {
+    padding: 50px 134px 44px 172px;
+  }
+
+  .guarantees__item {
+    font-size: 18px;
+    line-height: 1.62;
+    letter-spacing: 0.9px;
+  }
+
+  .guarantees__list::before {
+    height: 224px;
+}
+
+/* ! registration-1280px */
+
+.registration {
+  padding-top: 86px;
+  padding-bottom: 88px;
+  background-image: url(../img/registration/t2-1280.jpg);
+}
+
+.registration__title {
+  font-size: 38px;
+  line-height: 1.334;
+  letter-spacing: 1.9px;
+  margin-bottom: 52px;
+}
+
+.registration__description {
+  font-size: 18px;
+  line-height: 1.361;
+  letter-spacing: 0.9px;
+  }
+
+  .input {
+    width: 618px;
+    height: 70px;
+  }
+
+  .input::placeholder {
+    padding-left: 26px;
+    font-size: 21px;
+    line-height: 1.8;
+    letter-spacing: 1.05px;
+  }
+
+  .registration__client-name {
+    margin-bottom: 28px;
+  }
+
+
+}
+
+/* ! 1680px */
+@media (min-width: 1680px) {
+  .container {
+    width: 1340px;
+  }
+
+/* ! quarantees-1680px */
+.section-title {
+  font-size: 46px;
+  line-height: 1.365;
+  letter-spacing: 2.3px;
+  margin-bottom: 44px;
+}
+
+.guarantees__list {
+ padding: 65px 138px 58px 148px;
+}
+
+.guarantees__item {
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: 1.05px;
+}
+
+/* ! registration-1680px */
+
+.registration {
+  padding-top: 128px;
+  padding-bottom: 100px;
+  background-image: url(../img/registration/t2-1680.jpg);
+}
+
+.registration__title {
+  margin-bottom: 70px;
+}
+
+.registration__description {
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: 1.25px;
+  }
+
+
+
+
+}
