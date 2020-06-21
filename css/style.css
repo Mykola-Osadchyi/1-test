@@ -142,7 +142,7 @@ body {
   margin: -1px;
 }
 
-/* ! quarantees */
+/* ! guarantees */
 .guarantees {
 padding-top: 30px;
 padding-bottom: 30px;
@@ -180,18 +180,18 @@ padding-bottom: 30px;
 
 .guarantees__item--highlight {
   color: var(--primary-color);
- }
+}
 
 .guarantees__item::before {
   content: "";
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(../img/guarantees/noun_Campfire_2425646.svg);
+  background-image: url(../images/guarantees/noun_Campfire_2425646.svg);
   background-repeat: no-repeat;
   background-position: center; 
   position: absolute;
-  transform: translate(-37px, 0px);
+  left: -37px;
   z-index: 1;
 }
 
@@ -222,7 +222,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-mobile.JPG);
+  url(../images/registration/lesson-mobile.JPG);
 }
 
 @media (min-resolution: 192dpi) {
@@ -234,7 +234,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-mobile@2x.JPG);
+  url(../images/registration/lesson-mobile@2x.JPG);
   }
 }
 
@@ -337,7 +337,7 @@ padding-bottom: 30px;
     width: 688px;
   }
 
-  /* ! quarantees-tablet */
+  /* ! guarantees-tablet */
   .guarantees {
     padding-top: 54px;
     padding-bottom: 58px;
@@ -367,7 +367,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-tablet.JPG);
+  url(../images/registration/lesson-tablet.JPG);
 }
 
 @media (min-resolution: 192dpi) {
@@ -379,7 +379,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-tablet@2x.JPG);
+  url(../images/registration/lesson-tablet@2x.JPG);
   }
 }
 
@@ -416,7 +416,7 @@ padding-bottom: 30px;
     width: 1210px;
   }
 
-/* ! quarantees-1280px */
+/* ! guarantees-1280px */
   .section-title {
     font-size: 42px;
     line-height: 1.489;
@@ -446,7 +446,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-1280px.JPG);
+  url(../images/registration/lesson-1280px.JPG);
 }
 
 @media (min-resolution: 192dpi) {
@@ -458,7 +458,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-1280px@2x.JPG);
+  url(../images/registration/lesson-1280px@2x.JPG);
   }
 }
 
@@ -501,7 +501,7 @@ padding-bottom: 30px;
     width: 1340px;
   }
 
-/* ! quarantees-1680px */
+/* ! guarantees-1680px */
 .section-title {
   font-size: 46px;
   line-height: 1.365;
@@ -531,7 +531,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-1680px.JPG);
+  url(../images/registration/lesson-1680px.JPG);
 }
 
 @media (min-resolution: 192dpi) {
@@ -543,7 +543,7 @@ padding-bottom: 30px;
     rgba(0, 0, 0, 0.3) 6px,
     rgba(0, 0, 0, 0.3) 6px
   ),
-  url(../img/registration/lesson-1680px@2x.JPG);
+  url(../images/registration/lesson-1680px@2x.JPG);
   }
 }
 
@@ -557,5 +557,4 @@ padding-bottom: 30px;
   line-height: 1.5;
   letter-spacing: 1.25px;
   }
-
 }
