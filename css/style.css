@@ -66,7 +66,8 @@
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
+  font-size: 0.6875rem;
+  font-size: 2em;
 }
 
 *,
@@ -141,11 +142,25 @@ body {
   /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
   margin: -1px;
 }
+.for-absolute {
+  position: relative;
+}
+
+.new {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: -143px;
+  left: 150px;
+}
+
 
 /* ! guarantees */
 .guarantees {
 padding-top: 30px;
 padding-bottom: 30px;
+background-color: rgb(104, 67, 67);
 }
 
 .section-title {
@@ -184,9 +199,18 @@ padding-bottom: 30px;
 .guarantees__item::before {
   content: "";
   display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/guarantees/noun_Campfire_2425646.svg);
+  /* width: 24px; */
+  /* height: 24px; */
+  width: 40px;
+  height: 32px;
+  /* background-image: url(../images/guarantees/noun_Campfire_2425646.svg); */
+  /* background-image: url(../images/teacher/noun_Check_2422424.svg); */
+  /* background-image: url(../images/header/noun_Female_Student_2575636.svg); */
+  /* background-image: url(../images/header/noun_Mobile_Learning_2671727.svg); */
+  /* background-image: url(../images/header/noun_insurance_1989980.svg); */
+  background-image: url(../images/header/female_student.svg);
+  /* background-image: url(../images/header/insurance.svg); */
+  /* background-image: url(../images/header/mobile_learning.svg); */
   background-repeat: no-repeat;
   background-position: center; 
   position: absolute;
@@ -520,6 +544,13 @@ padding-bottom: 30px;
 
 /* ! registration-1680px */
 
+
+
+
+.guarantees {
+  padding-bottom: 430px;
+}
+
 .registration {
   padding-top: 128px;
   padding-bottom: 100px;
@@ -548,7 +579,7 @@ padding-bottom: 30px;
 
 .registration__title {
   margin-bottom: 70px;
-  padding: 0px 28px;
+  padding: 200px 28px;
 }
 
 .registration__description {
